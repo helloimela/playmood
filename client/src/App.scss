@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  h1 {
+    color: var(--secondary);
+  }
+}
+
+.emojis {
+  font-size: 4rem;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  animation: blink 5s alternate infinite;
+}
+
+@keyframes blink {
+  0% { background-image: url(./assets/emojis/icon_1.svg); }
+  12% { background-image: url(./assets/emojis/icon_2.svg); }
+  25% { background-image: url(./assets/emojis/icon_3.svg); }
+  50% { background-image: url(./assets/emojis/icon_7.svg); }
+  72% { background-image: url(./assets/emojis/icon_5.svg); }
+  84% { background-image: url(./assets/emojis/icon_6.svg); }
+  100% { background-image: url(./assets/emojis/icon_8.svg); }
+}
